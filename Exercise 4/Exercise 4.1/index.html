@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <main>
+    <svg width="526" height="525" viewBox="0 0 526 525"
+         xmlns="http://www.w3.org/2000/svg">
+
+        <!-- Sky -->
+        <rect width="526" height="322" fill="#7EC6E2"/>
+
+        <!-- Grass -->
+        <rect y="322" width="526" height="203" fill="#008000"/>
+
+        <!-- Sun -->
+        <rect x="400" y="90" width="100" height="100" fill="#FFFF00"/>
+
+        <!-- Tree -->
+        <rect x="84" y="263" width="22" height="112" fill="#A0522D"/>
+        <circle cx="74" cy="227" r="33" fill="#FFB6C1"/>
+        <circle cx="116" cy="226" r="33" fill="#FFB6C1"/>
+        <circle cx="95" cy="244" r="35" fill="#FFB6C1"/>
+        
+        <!-- Curved pathway -->
+        <path d="M265 375 C210 390 155 400 148 425 C141 450 190 474 246 525"
+              fill="none"
+              stroke="#808588"
+              stroke-width="30"/>
+
+        <path d="M285 375 C230 390 180 405 174 425 C168 449 222 477 296 525"
+              fill="none"
+              stroke="#808588"
+              stroke-width="30"/>
+
+        <!-- House -->
+        <rect x="159" y="215" width="213" height="160" fill="#914510"/>
+
+        <!-- Roof -->
+        <polygon points="159,215 265.5,109 372,215" fill="#D0873D"/>
+
+        <!-- Chimney -->
+         <polygon points="180,193.5 180,150.5 225,150.5" fill="#777B7E"/>
+         <rect x="180" y="130.7" width="45" height="20" fill="#777B7E"/>
+
+        <!-- Windows -->
+         <g>
+        <rect x="180" y="237" width="43" height="43" fill="#B9DDEB"/>
+        <rect x="308" y="237" width="43" height="43" fill="#B9DDEB"/>
+        </g>
+
+        <!-- Door -->
+        <rect x="244" y="290" width="43" height="85" fill="#A9542D"/>
+        <circle cx="276" cy="332" r="5.5" fill="black"/>
+
+
+        <!-- Text -->
+        <text x="404" y="312"
+              font-family="Arial, sans-serif"
+              font-size="27"
+              fill="black">
+            House
+        </text>
+
+    </svg>    
+    </main>
+
+
+</body>
+</html>
