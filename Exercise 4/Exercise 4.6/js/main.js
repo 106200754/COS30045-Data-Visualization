@@ -11,6 +11,9 @@ d3.csv("../Exercise 4.4/data/tvBrandCount.csv", d => {
  };
 }).then(data =>{
   console.log(data);
+
+  data.sort((a, b) => b.count - a.count);
+
   createBarChart(data);
 });
 
@@ -29,10 +32,6 @@ const createBarChart = data => {
     .selectAll("rect")
     .data(data)
     .join("rect")
-    .attr("class", d => {
-      console.log(d);
-      return `bar bar-${d.count}`;
-    })
     .attr("width", d => xScale(d.count))
     .attr("height", yScale.bandwidth())
     .attr("fill", "blue")
