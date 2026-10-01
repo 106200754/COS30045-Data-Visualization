@@ -4,7 +4,7 @@ const svg = d3.select(".responsive-svg-container")
       .style("border", "1px solid black");
 
 
-d3.csv("../Exercise 4.4/data/tvBrandCount.csv", d => {
+d3.csv("../Exercise 4.5/data/tvBrandCount.csv", d => {
   return {
     brand: d.brand,
     count: +d.count
