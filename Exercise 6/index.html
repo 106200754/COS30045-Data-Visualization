@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TV Energy Consumption</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/visualisation.css">
+<style>
+
+</style>
+</head>
+<body>
+<div class="page">
+    <header>
+    <h1>TV Energy Consumption</h1>
+    </header>
+
+    <main>
+    <h2>Energy Consumption for different TV screen types and sizes</h2>
+    <p class="subtitle">TV's vary considerably in energy consumption.</p>
+
+    <!-- Histogram goes here (left blank for now) -->
+    
+    <div id="filters_screen"></div>
+    <div id="histogram"></div>
+    <div id="filters_size"></div>
+    <div id="scatterplot" class="responsive-svg-container"></div>
+
+    <h3>Data source</h3>
+    <a href="#">Energy Rating Data for household appliances - Televisions</a>
+    <p class="download">Downloaded Jan 2026</p>
+    </main>
+
+    <footer>© Data Visualisation Week 6</footer>
+</div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/load-data.js"></script>
+    <script src="js/shared-constants.js"></script>
+    <script src="js/interactions.js"></script>
+    <script src="js/histogram.js"></script>
+    <script src="js/scatterplot.js"></script>
+</body>
+</html>

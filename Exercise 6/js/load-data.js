@@ -1,0 +1,20 @@
+d3.csv("../Exercise 6/data/Ex6_TVdata_withStar.csv", d => ({
+    brand: d.brand,
+    model: d.model,
+    screenSize: +d.screenSize,
+    screenTech: d.screenTech,
+    energyConsumption: +d.energyConsumption,
+    star: +d.star
+})).then(data => {
+    console.log(data);
+
+    drawHistogram(data);
+    populateFilters(data);
+    populateSizeFilters(data);
+    drawScatterplot(data);
+    createTooltip();
+    handleMouseEvents();
+
+}).catch(error => {
+    console.error("Error loading the CSV file:", error);
+});
