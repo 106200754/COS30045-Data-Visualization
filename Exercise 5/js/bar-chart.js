@@ -22,7 +22,6 @@ const drawBarChart = data => {
     const svg = d3.select("#bar-chart")
         .append("svg")
         .attr("viewBox", `0, 0, ${width}, ${height}`)
-        .style("border", "1px solid black");
     
     const innerChart = svg
         .append("g")
