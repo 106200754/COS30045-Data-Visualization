@@ -17,7 +17,7 @@ const drawLineChart = data => {
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
 
-    const svg = d3.select("#bar-chart")
+    const svg = d3.select("#line-chart")
         .append("svg")
         .attr("viewBox", `0, 0, ${width}, ${height}`)
 
